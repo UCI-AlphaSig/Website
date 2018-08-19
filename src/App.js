@@ -17,6 +17,7 @@ import RecruitmentPage from "./pages/RecruitmentPage";
 import PageNotFound from "./pages/PageNotFound";
 
 //import components
+import Header from "./components/Header"
 import Footer from "./components/Footer";
 
 //page
@@ -24,6 +25,7 @@ class App extends Component {
   render() {
     return (
       <div className="page">
+        <div> <Header/> </div>
         <div className="content">
           <Router>
             <Switch>

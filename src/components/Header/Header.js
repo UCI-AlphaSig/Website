@@ -5,9 +5,8 @@ import "./Header.css";
 class Header extends Component{
     render () {
         return(
-            <Navbar brand= {<img src="Images/Flag.png" alt="Alpha Sigma Phi Flag" />} right>
-                <NavItem onClick={() => console.log('test click')}>Getting started</NavItem>
-                <NavItem href='components.html'>Components</NavItem>
+            <Navbar className="Header" brand= {<a href="/"><img src="Images/Flag.png" alt="Alpha Sigma Phi Flag" className="Flag_img"/></a>} right>
+                <NavItem href='/recruitment'>Recruitment</NavItem>
             </Navbar>
         );
     };
