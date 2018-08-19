@@ -1,13 +1,27 @@
 import React, {Component} from "react";
 import "./Footer.css";
-import {Button} from "react-materialize";
 
 class Footer extends Component{
   render(){
     return(
       <div className="Footer">
-        <Button> this is a materialize button </Button>
-        THIS IS THE FOOTER COMPONENT
+        <hr/>
+
+        <ol className="content">
+          <li>email: testemail@test.com</li>
+          <li>
+            <ol>
+              <li><a href="#">link1</a></li>
+              <li><a href="#">link2</a></li>
+              <li><a href="#">link3</a></li>
+            </ol>
+          </li>
+        </ol>
+        ©Copyright 2018 all rights reserved
+        
+
+
+
       </div>
     );
   };
