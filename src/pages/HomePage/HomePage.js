@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./HomePage.css";
-import {Carousel} from "react-materialize";
+import { Carousel, Collapsible, CollapsibleItem } from "react-materialize";
 
 class HomePage extends Component {
   render() {
     return (
-      <div>
-        <Carousel options={{ fullWidth: true, indicators: true }}>
+      <div className="HomePage">
+        <Carousel options={{ fullWidth: true, indicators: true, duration:200}}>
           <div className='red'>
             <h2>First Panel</h2>
             <p className='white-text'>This is your first panel</p>
@@ -24,6 +24,23 @@ class HomePage extends Component {
             <p className='white-text'>This is your fourth panel</p>
           </div>
         </Carousel>
+
+        <div className="aboutUs">
+          <p>THIS IS US AND ALL ABOUT US</p>
+        </div>
+
+        <Collapsible>
+          <CollapsibleItem header='First' icon='filter_drama'>
+            Lorem ipsum dolor sit amet.
+          </CollapsibleItem>
+          <CollapsibleItem header='Second' icon='place'>
+            Lorem ipsum dolor sit amet.
+          </CollapsibleItem>
+          <CollapsibleItem header='Third' icon='whatshot'>
+            Lorem ipsum dolor sit amet.
+          </CollapsibleItem>
+        </Collapsible>
+
       </div>
     );
   };
